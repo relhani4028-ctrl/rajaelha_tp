@@ -1,0 +1,27 @@
+1) implementation iterative avec boucle
+
+#ALGORITHME:PGCD(a;b)
+    var:a;b:entiers
+     foction:PGCD(a;b)
+      tant que b!=0 faire
+     rest<---a mod b
+     a<---b
+     b<---rest
+       retourner a
+      fin tant que
+    fin fonction
+   
+
+
+2) implementataion recursive 
+
+
+#ALGORITHME:PGCD(a;b)
+   var:a;b: entires 
+  debut
+   si b=0
+   retourner a
+   sinon
+retourner pgcd(b,a mod b)
+   fin si
+  fin

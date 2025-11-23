@@ -1,0 +1,21 @@
+ #algorithme:saisie code  PIN d'une carte SIM
+    foction:code PIN d'une carte SIM 
+      constante code PIN correct<--4567
+      variable tentative<--0 
+      variable saisie<--" "
+   debut 
+    tant que tentetive<3 faire 
+     ecrire("veuillez entrer votre code PIN")
+     lire (codePIN)
+       si code PIN=4567 alors
+     ecrire("code PIN correct carte SIM devrouillee")
+    arret
+       sinon
+    tentative<--tentative+1
+      ecrire("code incorrect!ressayez")
+        fin si
+     fin tant que 
+         si tentative=3 alors
+       ecrire("carte SIM blouquee")
+         fin si
+     fin

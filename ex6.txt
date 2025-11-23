@@ -1,0 +1,13 @@
+ALGORITHME: triangle_floyd
+ VAR   
+    fonction trianglefloyd
+    VAR compteur:reel
+    compteur <- 1
+    Pour i de 1 à n faire 
+        Pour j de 1 à i faire 
+            Afficher compteur 
+            compteur <- compteur + 1 
+        Fin Pour
+        Ecrire une nouvelle ligne 
+    Fin Pour
+Fin Fonction

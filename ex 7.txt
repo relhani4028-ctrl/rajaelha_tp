@@ -1,0 +1,11 @@
+ALGORITHME somme_recursive
+VAR nombre : entier
+fonction sommeRecursive(n) :
+    si n == 0 :
+        retourner 0
+    sinon :
+        retourner n-(n-1)
+DEBUT
+   Ecrire("entrer un nombre "n)
+   lire n 
+Fin

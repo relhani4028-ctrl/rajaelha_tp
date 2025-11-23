@@ -1,0 +1,11 @@
+#LAGORITHME:echanger(a;b)
+    variable:a;b:entiers
+   fonction:ehange(a;b)
+     temp<---a
+     a<---b
+     b<---temp
+   fin foction
+DEBUT
+    ecrire("Entrer la valeur de a;b" )
+    lire(a;b)
+Fin

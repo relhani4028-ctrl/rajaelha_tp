@@ -1,0 +1,34 @@
+Algorithme DevinetteNombreSecret
+VAR n;devinette: entier
+DEBUT
+    rejouer ← Vrai
+    Tant que rejouer = Vrai Faire
+        n ← aleatoire(1, 100)
+        tentative ← 1
+        trouve ← Faux
+        Tant que tentative =< 5 et trouve = Faux Faire
+            ecrire("Tentative ", tentative, "/5 : Devinez le nombre entre 1 et 100 :")
+            lire (devinette)
+            Si devinette = n Alors
+                ecrire ("Félicitations ! Vous avez deviné le nombre correct : ", n)
+                trouve ← Vrai
+            Sinon
+                Si deviner > n Alors
+                    ecrire("Trop grand !")
+                Sinon
+                    ecrire("Trop petit !")
+                Fin Si
+                tentative ← tentative + 1
+            Fin Si
+        Fin Tant que
+          Si trouve = Faux Alors
+            ecrire("Désolé, vous n'avez pas trouvé le nombre. Le nombre correct était : ", n)
+          Fin Si
+        ecrire( "Voulez-vous rejouer ? (oui/non) :")
+        lire(reponse)
+        Si reponse != "oui" Alors
+            rejouer ← Faux
+        Fin Si
+    Fin Tant que
+    ecrire( "Merci d'avoir joué !")
+Fin

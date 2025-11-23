@@ -1,0 +1,27 @@
+premier methode: 
+#ALGORITHME
+ fonction:afficher diviseur 
+    var:n:entier positif 
+      pour b de 1 à n faire 
+        si n mod b = 0 alors 
+    afficher b
+        fin si 
+      fin pour 
+   fin fonction 
+
+
+deuxieme methode:
+ 
+#ALGORITHME:
+ fonction: afficher diviseur 
+   var: n: entier positif 
+     pour b de 1 à racine carre (n) faire 
+       si n mod b=0 alors
+     afficher b
+       si b!= n\b alors 
+     afficher n\b
+       fin si
+       fin si 
+     fin pour 
+  fin fonction
+  
